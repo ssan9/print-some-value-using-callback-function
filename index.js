@@ -8,3 +8,14 @@ const sum = (x, callback) => {
 }
 
 console.log(sum(2, printSum));
+
+// or
+
+function printSum(x, callback) {
+  const sum = x + x;
+  return callback(sum);
+}
+
+const printNum = sum => 'The sum is ' + sum;
+
+console.log(printSum(2, printNum));
