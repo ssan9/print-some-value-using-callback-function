@@ -9,13 +9,13 @@ const sum = (x, callback) => {
 
 console.log(sum(2, printSum));
 
-// or
+//  For the alternate solution, comment out the current code and uncomment the remaining piece of code
 
-function printSum(x, callback) {
-  const sum = x + x;
-  return callback(sum);
-}
+// function printSum(x, callback) {
+//   const sum = x + x;
+//   return callback(sum);
+// }
 
-const printNum = sum => 'The sum is ' + sum;
+// const printNum = sum => 'The sum is ' + sum;
 
-console.log(printSum(2, printNum));
+// console.log(printSum(2, printNum));
